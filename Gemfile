@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'hirb'
 gem 'simple_form'
 gem 'factory_girl_rails'
+gem 'bcrypt-ruby', '~> 3.1.5', require: "bcrypt"
 
 group :development do
   gem 'byebug'

@@ -4,3 +4,8 @@
 <p><%= link_to "Delete", question_path(@question),
                         :data => {:confirm => "Sure, bro?",
                         :method => "delete"} %></p>
+<%= link_to "Give an Answer", new_question_answer_path(@question) %>
+<% @question.answers.each do |answer| %>
+  <p><%= answer.user_name %> says <%= answer.response %> |
+  <%= link_to "This is a stupid answer", question_answer_path(@question, answer), :data => {:confirm => "Really, dude?", :method => "delete"} %></p>
+<% end %>
