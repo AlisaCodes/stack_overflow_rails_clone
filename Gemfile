@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'hirb'
 gem 'simple_form'
+gem 'factory_girl_rails'
 
 group :development do
   gem 'byebug'

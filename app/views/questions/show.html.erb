@@ -1,0 +1,6 @@
+<h2><%= @question.user_name %> wants to know:"<%= @question.query %>?" ASAP!</h2>
+
+<p><%= link_to "Edit", edit_question_path(@question) %></p>
+<p><%= link_to "Delete", question_path(@question),
+                        :data => {:confirm => "Sure, bro?",
+                        :method => "delete"} %></p>
